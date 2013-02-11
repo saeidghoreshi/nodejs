@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+jQuery(document).ready(function()
+{
+	var logchatmsg=function(msg)
+	{
+		$('<li />').wrap('<b></b>').html(msg).appendTo('#log');
+	};
+
+	var socket=io.connect("http://localhost:3000");
+
+	socket.on("entrance",function(data)
+	{
+		logchatmsg(data.message);
+	});
+	socket.on("exit",function(data)
+	{
+		logchatmsg(data.message);
+	});
+
+	socket.on("chat",function(data)
+	{
+		logchatmsg(data.message);
+	});
+	jQuery('#area').keypress(function(event)
+	{
+		if(event.which==13)
+		{
+			socket.emit('chat',{message:jQuery(this).val()});
+			jQuery(this).empty();
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<label>Type here</label>
+<input id='area' type='text' />
+<div id='log'></div>
+</body>
+</html>
