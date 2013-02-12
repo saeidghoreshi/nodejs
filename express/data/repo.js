@@ -1,5 +1,5 @@
 exports.data=
 [
-	{name:"Link1",url:"http://google.com"},
-	{name:"Link2",url:"http://yahoo.com"}
+	{name:"link1",url:"http://google.com"},
+	{name:"link2",url:"http://yahoo.com"}
 ]

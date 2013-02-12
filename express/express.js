@@ -32,10 +32,9 @@ app.get('/datas',function(req,res)
 {
 	res.send('<b>All Datas</b>');
 });
-app.get('/datas/:title',function(req,res)
-{
-	res.send('<b>'+req.params.title+'</b>');
-});
+
+var lib=require('./lib');
+app.get('/datas/:title',lib.function1);
 
 
 app.get('/*',function(req,res)
