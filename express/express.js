@@ -1,5 +1,6 @@
 var express = require('express');
 var app=express();
+app.use(express.bodyParser())
 
 //ejs Routes
 app.get('/',function(req,res)
@@ -20,10 +21,7 @@ app.get('/view1',function(req,res)
 var repo=require('./data/repo').data;
 app.get('/complex',function(req,res)
 {
-	res.render('complex.ejs',
-	{
-		repo:repo
-	});
+	res.render('complex.ejs',{repo:repo});
 });
 
 //Normal Routs
@@ -35,6 +33,13 @@ app.get('/datas',function(req,res)
 
 var lib=require('./lib');
 app.get('/datas/:title',lib.function1);
+
+//Posting data
+app.get('/suggest',function(req,res)
+{
+	res.render('suggest.ejs',{title:"Suggestion"});
+});
+app.post('/suggest',lib.function2);
 
 
 app.get('/*',function(req,res)
