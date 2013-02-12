@@ -15,3 +15,11 @@ package.json permannetly then prune it
 xxx for uninstall just delete module name from package.json and npm prune
 
 *** install jshint got js validation  npm install jshint -g
+
+
+
+*****
+to auto generate App using express
+npm install express -g [in win does not work]
+[cmd-Path]/express app1-jade
+[cmd-Path]/express -t ejs app1-ejs
