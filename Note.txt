@@ -1,0 +1,17 @@
+npm search modulename list all the modules list
+search.npm.js
+
+
+
+
+1-put package.json in root 
+2-npm install 
+> installs dependencies defined in the package file
+
+
+xxx sudo npm update >> updates all the installed modules  or globally -g
+*** to just test the module use npm install modulename without adding to 
+package.json permannetly then prune it
+xxx for uninstall just delete module name from package.json and npm prune
+
+*** install jshint got js validation  npm install jshint -g

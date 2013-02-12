@@ -9,8 +9,8 @@
 	},
 	"dependencies":
 	{
-		"socket.io":"0.9.6",
-		"connect":"1.9.2"
+		"socket.io":"*",
+		"connect":"*"
 	},
 	"auther":"Saeid Ghoeshi",
 	"license":"BSD"
