@@ -1,0 +1,15 @@
+<html>
+<title>Repo</title>
+<style type="text/css" media="screen"></style>
+
+<body>
+
+<ul>
+<% repo.forEach(function(R){ %>
+	<li><a href='<%=R.url%>'> <%=R.name%> </a></li>
+<% }) %>
+</ul>
+
+
+</body>
+</html>

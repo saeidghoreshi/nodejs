@@ -1,0 +1,19 @@
+{
+	"name":"chatroom",
+	"version":"1.0.0",
+	"main":"server.js",
+	"scripts":
+	{
+		"test":"echo \"Error: no test Specified \" ",
+		"start":"node server.js"
+	},
+	"dependencies":
+	{
+		"node-markdown":"*",
+		"optimist":"*",
+		"combined-stream":"*",
+		"jquery":"*"
+	},
+	"auther":"Saeid Ghoeshi",
+	"license":"BSD"
+}

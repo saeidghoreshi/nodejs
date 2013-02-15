@@ -1,0 +1,16 @@
+{
+	"name":"http",
+	"version":"1.0.0",
+	"main":"http.js",
+	"scripts":
+	{
+		"test":"echo \"Error: no test Specified \" ",
+		"start":"node http.js"
+	},
+	"dependencies":
+	{
+		"connect":"*"
+	},
+	"auther":"Saeid Ghoeshi",
+	"license":"BSD"
+}
