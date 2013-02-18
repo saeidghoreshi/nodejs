@@ -1,0 +1,16 @@
+{
+	"name":"db",
+	"version":"1.0.0",
+	"main":"db.js",
+	"scripts":
+	{
+		"test":"echo \"Error: no test Specified \" ",
+		"start":"node db.js"
+	},
+	"dependencies":
+	{
+		
+	},
+	"auther":"Saeid Ghoeshi",
+	"license":"BSD"
+}
