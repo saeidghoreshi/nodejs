@@ -1,0 +1,16 @@
+{
+	"name":"event",
+	"version":"1.0.0",
+	"main":"server.js",
+	"scripts":
+	{
+		"test":"echo \"Error: no test Specified \" ",
+		"start":"node server.js"
+	},
+	"dependencies":
+	{
+		"events":"*"
+	},
+	"auther":"Saeid Ghoeshi",
+	"license":"BSD"
+}

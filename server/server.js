@@ -1,8 +1,9 @@
+
 var io=require('socket.io');
 var connect=require('connect');
 var chatter=require('chatter');
 
-var app = connect().use(connect.static('public')).listen(3000);
+var app = connect().use(connect.static('public')).listen(8082);
 var chatroom=io.listen(app);
 
 /*

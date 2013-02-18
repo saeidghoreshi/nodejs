@@ -1,7 +1,7 @@
 <html>
 <head>
 
-<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script src="http://stage-nodejs.azurewebsites.net:8082/socket.io/socket.io.js"></script>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
 <script type="text/javascript" charset="utf-8">
@@ -12,7 +12,7 @@ jQuery(document).ready(function()
 		$('<li />').wrap('<b></b>').html(msg).appendTo('#log');
 	};
 
-	var socket=io.connect("http://localhost:3000");
+	var socket=io.connect("http://stage-nodejs.azurewebsites.net:8082");
 
 	socket.on("entrance",function(data)
 	{

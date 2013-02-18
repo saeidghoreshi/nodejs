@@ -18,10 +18,11 @@ app.get('/view1',function(req,res)
 
 //work with data
 // "./" mens local
-var repo=require('./data/repo').data;
+var repo = require('./data/repo');
+var db = repo.data;
 app.get('/complex',function(req,res)
 {
-	res.render('complex.ejs',{repo:repo});
+	res.render('complex.ejs',{repo:db});
 });
 
 //Normal Routs

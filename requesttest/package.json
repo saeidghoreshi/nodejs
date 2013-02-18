@@ -1,0 +1,17 @@
+{
+	"name":"requesttest",
+	"version":"1.0.0",
+	"main":"server.js",
+	"scripts":
+	{
+		"test":"echo \"Error: no test Specified \" ",
+		"start":"node server.js"
+	},
+	"dependencies":
+	{
+		"request":"*",
+		"combined-stream":"*"
+	},
+	"auther":"Saeid Ghoeshi",
+	"license":"BSD"
+}

@@ -1,4 +1,4 @@
-var func1 = function (v, callback) {
+var delayF = function (v, callback) {
     var waitTime = Math.floor(Math.random() * 1000);
     if (v % 2)
         setTimeout(function () {
@@ -20,11 +20,5 @@ var resultGenerator = function (err, results, time) {
 }
 
 
-func1(2, resultGenerator);
-func1(5, resultGenerator);
-func1(6, resultGenerator);
-func1(7, resultGenerator);
-func1(10, resultGenerator);
-
-
-console.log('----   STARTED ------');
+exports.delayF = delayF;
+exports.resultGenerator = resultGenerator;
